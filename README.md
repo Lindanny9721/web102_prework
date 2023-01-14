@@ -35,7 +35,7 @@ GIF created with LiceCap
 ## Notes
 
 Describe any challenges encountered while building the app.
-One of my challenges was figuring out how I would use the spread operators for the app since I believed that the deconstructor operators would do all of it for me already.
+* One of my challenges was figuring out how I would use the spread operators for the app since I believed that the deconstructor operators would do all of it for me already.
 ## License
 
     Copyright [2023] [Daniel Lin]
