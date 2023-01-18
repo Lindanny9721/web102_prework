@@ -27,6 +27,7 @@ const gamesContainer = document.getElementById("games-container");
 addGamesToPage(GAMES_JSON);
 // create a function that adds all data from the games array to the page
 function addGamesToPage(games) {
+    console.log(games);
     // loop over each item in the data
     for(let i = 0; i < games.length; i++ )
     {
@@ -35,6 +36,7 @@ function addGamesToPage(games) {
        <h1>${games[i].name}</h1>
        <p>${games[i].description}</p>
        <p>Backers: ${games[i].backers}</p>
+       <p>${goalReached(games[i])}</p>
    </div>`
     }
         // create a new div element, which will become the game card
@@ -173,6 +175,35 @@ topfunded.innerHTML = `${first.name}`;
 runnerup.innerHTML = `${second.name}`
 firstGameContainer.appendChild(topfunded);
 secondGameContainer.appendChild(runnerup);
+
+//Search Function
+const search = document.getElementById("search");
+search.addEventListener('keyup', (e) => {
+    const test = GAMES_JSON.filter( input => {
+        return input.name.toLowerCase().includes(e.target.value.toLowerCase())
+    })
+    const list = test.map((input) => {
+        return `<div class = "game-card">
+        <img class = "game-img" src= ${input.img}>
+        <h1>${input.name}</h1>
+        <p>${input.description}</p>
+        <p>Backers: ${input.backers}</p>
+        <p>${goalReached(input)}</p>
+    </div>`
+    })
+    gamesContainer.innerHTML = list;
+    })
+function goalReached(game)
+{
+    if(game.pledged > game.goal)
+    {
+        return `<p>Goal Reached!</p>`;
+    }
+    else{
+        let amount_left = game.goal - game.pledged;
+        return `<p>$${amount_left.toLocaleString("en-US")} left till goal reached!</p>`;
+    }
+}
 
 // use destructuring and the spread operator to grab the first and second games
 

@@ -1,24 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500;600;700&display=swap');
-
 body {
     font-family: 'Cabin';
     background-color: #758190;
+    width: 100%;
 }
 
 #tentacles {
-    width: 50px;
+    width: 3.5%;
+    height: 3.5%;
 }
 
 .header {
     display: flex;
     background-color: lightblue;
-    padding: 1%;
     align-items: center;
-    margin-left: -10px;
-    margin-right: -10px;
-    margin-top: -10px;
+    padding-left: 1%;
+    overflow: hidden;
+    width:100%;
+    height: auto;
+    top: 0px;
+    left: 0px;
+    z-index: 9999;
+    position: fixed;
+    
+}
+.header-text{
+    font-size: 140%;
+}
+.brand{
+    display:flex;
+    float:left;
 }
 
+.nav {
+    font-size: 250%;
+	font-weight: bold;
+	text-decoration: none;
+    width:50%;
+    margin: 0 10% 0 10%;
+    bottom: auto;
+    position: relative;
+    bottom: 8px;
+}
+.nav a {
+    font-size: 16px;
+    text-align: center;
+    padding:2.5% 12%;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    background-color: lightblue;
+    font-family: 'Cabin';
+}
+.nav a:hover {
+    opacity: 0.5;
+}
+#button-container {
+	font-size: 250%;
+	font-weight: bold;
+	text-decoration: none;
+    width: 50%;
+    margin: 0 25%;
+    text-align: center;
+}
+button {
+    font-size: 16px;
+    padding: 2.5% 6%;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    background-color: lightblue;
+    font-family: 'Cabin';
+    border-radius: 15px;
+}
+button:hover {
+    opacity: 0.5;
+    background-clip: border-box;
+    background: #a8b0bc;
+}
+#search {
+    float:right;
+    font-size: 16px;
+    border-radius: 15px;
+    border-style: none;
+    width:10%;
+}
+#description-container{
+    padding-top:2.5%;
+}
 .stats-container {
     display: flex;
 }
@@ -61,18 +130,6 @@ body {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
 }
-
-#button-container {
-    text-align: center;
-}
-
-button {
-    font-family: 'Cabin';
-    border: none;
-    padding: 1%;
-    margin: 1%;
-    border-radius: 7px;
-}
 .stats-container {
     display: flex;
     align-items: flex-start;
@@ -80,4 +137,10 @@ button {
 .stats-container:hover {
     cursor: pointer;
     box-shadow: 0 0 30px lightblue;
+}
+h2{
+    text-align: center;
+}
+p{
+    text-align: center;
 }
