@@ -27,7 +27,6 @@ const gamesContainer = document.getElementById("games-container");
 addGamesToPage(GAMES_JSON);
 // create a function that adds all data from the games array to the page
 function addGamesToPage(games) {
-    console.log(games);
     // loop over each item in the data
     for(let i = 0; i < games.length; i++ )
     {

@@ -38,7 +38,6 @@ body {
 	text-decoration: none;
     width:50%;
     margin: 0 10% 0 10%;
-    bottom: auto;
     position: relative;
     bottom: 8px;
 }
@@ -56,9 +55,6 @@ body {
     opacity: 0.5;
 }
 #button-container {
-	font-size: 250%;
-	font-weight: bold;
-	text-decoration: none;
     width: 50%;
     margin: 0 25%;
     text-align: center;
