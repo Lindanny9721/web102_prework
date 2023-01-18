@@ -4,7 +4,7 @@ Submitted by: **Daniel Lin**
 
 **Game Crowfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **4** hours spent in total
+Time spent: **7** hours spent in total
 
 ## Required Features
 
@@ -17,7 +17,9 @@ The following **required** functionality is completed:
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+* [X] Added an Search bar to search for specific games.
+* [X] Added a fix navbar to navigate the web easier.
+
 
 ## Video Walkthrough
 
